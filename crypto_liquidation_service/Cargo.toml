@@ -1,0 +1,18 @@
+[package]
+name = "crypto_liquidation_service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.68"
+rust_decimal = "1.29"
+thiserror = "1.0"
+tokio = { version = "1.28", features = ["full"] }
+
+[[bin]]
+name = "crypto_liquidation_service"
+path = "src/main.rs"
+
+[lib]
+name = "crypto_liquidation_service"
+path = "src/lib.rs"
